@@ -4,7 +4,8 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "jest --forceExit --detectOpenHandles  --watchAll --maxWorkers=1"   
+    "test": "jest --forceExit --detectOpenHandles  --watchAll --maxWorkers=1",
+     "start": "node server.js"
   },
   "keywords": [],
   "author": "",
