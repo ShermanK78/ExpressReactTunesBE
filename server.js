@@ -84,14 +84,6 @@ app.delete('/api/media/:id', (req, res) => {
   }
 });
 
-// Serve static files from the React app
-app.use(express.static(path.join(__dirname,'../client/build')));
-
-// Handle requests to the root URL by serving the React app
-app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname,'../client/build/index.html'));
-});
-
 app.listen(port, () => {
   console.log('Listening on', port);
 });
